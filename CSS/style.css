@@ -5,3 +5,7 @@
 /* second color text #757575 */
 /* logo color text #000000 */
 /* footer color     background: #2F303A; */
+
+ul {
+  list-style: none;
+}
