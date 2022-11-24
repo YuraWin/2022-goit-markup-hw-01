@@ -10,13 +10,13 @@
 :root {
   --primary-color-text: #757575;
   --secondary-color-text: #212121;
-  --header-background-color: #ffffff;
-  --page-background-color: #f5f5f5;
-  --footer-color-background: #2f303a;
+  --header-bg-color: #ffffff;
+  --page-bg-color: #f5f5f5;
+  --footer-bg-color: #2f303a;
   --accent-color: #2196f3;
 }
 body {
-  background: var(--page-background-color);
+  background: var(--page-bg-color);
   color: var(--primary-color-text);
 }
 ul {
@@ -25,9 +25,10 @@ ul {
 a {
   text-decoration: none;
 }
-/* Sitenav */
+/* Header*/
 .logo {
   color: #000000;
+  cursor: default;
 }
 .logo-web {
   color: var(--accent-color);
@@ -40,11 +41,46 @@ a {
   color: var(--accent-color);
 }
 
-/* Hero */
+.auth .link {
+  color: var(--primary-color-text);
+}
 
+.auth .link:hover,
+.auth .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
 .hero-title {
   color: #ffffff;
 }
 
-.section {
+.section-title {
+  color: var(--secondary-color-text);
+}
+
+/* Advances  */
+.advances-list .title {
+  color: var(--secondary-color-text);
+}
+
+/* Team */
+.team-list .title {
+  color: var(--secondary-color-text);
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-bg-color);
+}
+
+.logfooter {
+  color: #ffffff;
+}
+.address {
+  color: #ffffff;
+}
+.mail-footer,
+.tel-footer {
+  color: rgba(255, 255, 255, 0.6);
 }
