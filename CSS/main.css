@@ -1,0 +1,21 @@
+/* Hero */
+.hero {
+  background-color: var(--secondary-bg-color);
+}
+.hero-title {
+  color: #ffffff;
+}
+
+.section-title {
+  color: var(--secondary-color-text);
+}
+
+/* Advances  */
+.advances-list .title {
+  color: var(--secondary-color-text);
+}
+
+/* Team */
+.team-list .title {
+  color: var(--secondary-color-text);
+}
