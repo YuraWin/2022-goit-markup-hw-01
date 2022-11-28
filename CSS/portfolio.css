@@ -1,6 +1,9 @@
 /* Portfolio */
 
 .button {
+  min-width: 73px;
+  padding: 6px 22px;
+
   color: var(--secondary-color-text);
   background-color: #f5f4fa;
 
@@ -16,9 +19,21 @@
 .button.active {
   color: #ffffff;
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.selection-list {
+  margin-bottom: 50px;
+}
+
+.portfolio .image {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .portfolio .title {
+  margin-bottom: 4px;
   color: var(--secondary-color-text);
 
   font-weight: 700;
@@ -27,6 +42,7 @@
   letter-spacing: 0.06em;
 }
 .portfolio .sort {
+  margin: 0px;
   color: var(--primary-color-text);
 
   font-size: 16px;
