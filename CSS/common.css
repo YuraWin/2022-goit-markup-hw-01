@@ -22,6 +22,13 @@ button {
   font-family: inherit;
 }
 
+.container {
+  margin: 0px auto;
+  width: 1200px;
+  padding: 0 15px;
+  outline: 1px solid tomato;
+}
+
 /* Header*/
 .logo {
   color: #000000;
@@ -54,7 +61,7 @@ button {
   color: var(--accent-color);
 }
 
-.auth .link {
+.contact .link {
   color: var(--primary-color-text);
 
   font-weight: 500;
@@ -69,7 +76,7 @@ button {
 }
 
 /* Footer */
-footer {
+.page-footer {
   background-color: var(--secondary-bg-color);
 }
 
