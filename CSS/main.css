@@ -45,6 +45,18 @@
 .section.advances {
   padding-bottom: 0px;
 }
+.section.advances .section-title {
+  display: none;
+}
+.advances-list {
+  display: flex;
+}
+.advances-list .item {
+  width: 270px;
+}
+.advances-list .item + .item {
+  margin-left: 30px;
+}
 .advances-list .title {
   color: var(--secondary-color-text);
 
@@ -62,7 +74,25 @@
   line-height: 1.71;
 }
 
+/* Works */
+.works {
+  display: flex;
+}
+.works .item:not(:last-child) {
+  margin-right: 30px;
+}
+.works .work {
+  display: block;
+}
+
 /* Team */
+
+.team-list {
+  display: flex;
+}
+.team-list .item:not(:first-child) {
+  margin-left: 30px;
+}
 .team-list .foto {
   margin-bottom: 30px;
 }

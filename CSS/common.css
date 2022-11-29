@@ -42,7 +42,24 @@ h4 {
 }
 
 /* Header*/
+.container.header {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+.site-nav .navigation {
+  display: flex;
+}
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
 .logo {
+  margin-right: 90px;
   display: inline-block;
   color: #000000;
   cursor: default;
@@ -57,8 +74,10 @@ h4 {
 }
 
 .site-nav .link {
-  color: var(--secondary-color-text);
+  display: block;
+  padding: 32px 0px;
 
+  color: var(--secondary-color-text);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -74,6 +93,13 @@ h4 {
   color: var(--accent-color);
 }
 
+.contact {
+  display: flex;
+}
+
+.contact .item + .item {
+  margin-left: 50px;
+}
 .contact .link {
   color: var(--primary-color-text);
 
@@ -83,8 +109,8 @@ h4 {
   letter-spacing: 0.02em;
 }
 
-.auth .link:hover,
-.auth .link:focus {
+.contact .link:hover,
+.contact .link:focus {
   color: var(--accent-color);
 }
 
