@@ -38,13 +38,17 @@ h4 {
   margin: 0px auto;
   width: 1200px;
   padding: 0 15px;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
+}
+.invisible {
+  display: none;
 }
 
 /* Header*/
 .container.header {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 .site-nav {
   display: flex;

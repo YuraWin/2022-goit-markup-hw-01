@@ -21,19 +21,21 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container header">
         <nav class="site-nav">
           <a href="./index.html" class="logo"> <span class="logo-web">Web</span>Studio</a>
-          <ul>
-            <li><a href="./index.html" class="link current">Студія</a></li>
-            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li><a href="./index.html" class="link">Контакти</a></li>
+          <ul class="navigation">
+            <li class="item"><a href="./index.html" class="link current">Студія</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+            <li class="item"><a href="./index.html" class="link">Контакти</a></li>
           </ul>
         </nav>
 
         <ul class="contact">
-          <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+          </li>
+          <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
         </ul>
       </div>
     </header>
@@ -41,7 +43,7 @@
       <!-- Секція Портфоліо -->
       <section class="section">
         <div class="container">
-          <h1>Портфоліо</h1>
+          <h1 class="section-title invisible">Портфоліо</h1>
           <ul class="selection-list">
             <li class="item"><button type="button" class="button active">Усі</button></li>
             <li class="item"><button type="button" class="button">Веб-сайти</button></li>
@@ -50,8 +52,8 @@
             <li class="item"><button type="button" class="button">Маркетинг</button></li>
           </ul>
           <ul class="portfolio">
-            <li>
-              <a href="./">
+            <li class="item">
+              <a class="card" href="./">
                 <img
                   class="image"
                   src="./images/img.jpg"
@@ -59,12 +61,14 @@
                   height="294"
                   alt="Технокряк"
                 />
-                <h2 class="title">Технокряк</h2>
-                <p class="sort">Веб-сайт</p>
+                <div class="caption">
+                  <h2 class="title">Технокряк</h2>
+                  <p class="sort">Веб-сайт</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="./">
+            <li class="item">
+              <a class="card" href="./">
                 <img
                   class="image"
                   src="./images/img-1.jpg"
@@ -72,12 +76,14 @@
                   height="294"
                   alt="Постер New Orlean vs Golden Star"
                 />
-                <h2 class="title">Постер New Orlean vs Golden Star</h2>
-                <p class="sort">Дизайн</p>
+                <div class="caption">
+                  <h2 class="title">Постер New Orlean vs Golden Star</h2>
+                  <p class="sort">Дизайн</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="./">
+            <li class="item">
+              <a class="card" href="./">
                 <img
                   class="image"
                   src="./images/img-2.jpg"
@@ -85,12 +91,14 @@
                   height="294"
                   alt="Ресторан Seafood"
                 />
-                <h2 class="title">Ресторан Seafood</h2>
-                <p class="sort">Додаток</p>
+                <div class="caption">
+                  <h2 class="title">Ресторан Seafood</h2>
+                  <p class="sort">Додаток</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="./">
+            <li class="item">
+              <a class="card" href="./">
                 <img
                   class="image"
                   src="./images/img-3.jpg"
@@ -98,11 +106,13 @@
                   height="294"
                   alt="Проєкт Prime"
                 />
-                <h2 class="title">Проєкт Prime</h2>
-                <p class="sort">Маркетинг</p>
+                <div class="caption">
+                  <h2 class="title">Проєкт Prime</h2>
+                  <p class="sort">Маркетинг</p>
+                </div>
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="./">
                 <img
                   class="image"
@@ -111,12 +121,14 @@
                   height="294"
                   alt="Проєкт Boxes"
                 />
-                <h2 class="title">Проєкт Boxes</h2>
-                <p class="sort">Додаток</p>
+                <div class="caption">
+                  <h2 class="title">Проєкт Boxes</h2>
+                  <p class="sort">Додаток</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="./">
+            <li class="item">
+              <a class="card" href="./">
                 <img
                   class="image"
                   src="./images/img-5.jpg"
@@ -124,12 +136,14 @@
                   height="294"
                   alt="Inspiration has no Borders"
                 />
-                <h2 class="title">Inspiration has no Borders</h2>
-                <p class="sort">Веб-сайт</p>
+                <div class="caption">
+                  <h2 class="title">Inspiration has no Borders</h2>
+                  <p class="sort">Веб-сайт</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="./">
+            <li class="item">
+              <a class="card" href="./">
                 <img
                   class="image"
                   src="./images/img-6.jpg"
@@ -137,12 +151,14 @@
                   height="294"
                   alt="Видання Limited Edition"
                 />
-                <h2 class="title">Видання Limited Edition</h2>
-                <p class="sort">Дизайн</p>
+                <div class="caption">
+                  <h2 class="title">Видання Limited Edition</h2>
+                  <p class="sort">Дизайн</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="./">
+            <li class="item">
+              <a class="card" href="./">
                 <img
                   class="image"
                   src="./images/img-7.jpg"
@@ -150,12 +166,14 @@
                   height="294"
                   alt="Проєкт LAB"
                 />
-                <h2 class="title">Проєкт LAB</h2>
-                <p class="sort">Маркетинг</p>
+                <div class="caption">
+                  <h2 class="title">Проєкт LAB</h2>
+                  <p class="sort">Маркетинг</p>
+                </div>
               </a>
             </li>
-            <li>
-              <a href="./">
+            <li class="item">
+              <a class="card" href="./">
                 <img
                   class="image"
                   src="./images/img-8.jpg"
@@ -163,8 +181,10 @@
                   height="294"
                   alt="Growing Business"
                 />
-                <h2 class="title">Growing Business</h2>
-                <p class="sort">Додаток</p>
+                <div class="caption">
+                  <h2 class="title">Growing Business</h2>
+                  <p class="sort">Додаток</p>
+                </div>
               </a>
             </li>
           </ul>
