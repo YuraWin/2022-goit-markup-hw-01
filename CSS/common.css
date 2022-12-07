@@ -118,6 +118,36 @@ h4 {
   color: var(--accent-color);
 }
 
+.contact .link.mail {
+  display: flex;
+  align-items: center;
+}
+
+.contact .link.tel {
+  display: flex;
+  align-items: center;
+}
+.contact .link.mail::before {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+
+  display: inline-flex;
+  content: '';
+
+  background-image: url(../images/mail.svg);
+}
+
+.contact .link.tel::before {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+
+  display: inline-flex;
+  content: '';
+  background-image: url(../images/tel.svg);
+}
+
 /* Footer */
 .page-footer {
   padding: 60px 0;
