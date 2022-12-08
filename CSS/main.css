@@ -78,6 +78,36 @@
 
   margin-bottom: 10px;
 }
+.advances-list .title::before {
+  content: '';
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+
+.advances-list .title.attention::before {
+  background-image: url(../images/antenna1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advances-list .title.punctuality::before {
+  background-image: url(../images/clock1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.advances-list .title.planning::before {
+  background-image: url(../images/diagram1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.advances-list .title.modern::before {
+  background-image: url(../images/astronaut1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .advances-list .text {
   margin: 0px;
