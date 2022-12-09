@@ -78,35 +78,28 @@
 
   margin-bottom: 10px;
 }
-.advances-list .title::before {
+.advances-list .item::before {
   content: '';
   display: inline-block;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.advances-list .title.attention::before {
+.advances-list .item.attention::before {
   background-image: url(../images/antenna1.svg);
-  background-position: center;
-  background-repeat: no-repeat;
 }
-
-.advances-list .title.punctuality::before {
+.advances-list .item.punctuality::before {
   background-image: url(../images/clock1.svg);
-  background-position: center;
-  background-repeat: no-repeat;
 }
-.advances-list .title.planning::before {
+.advances-list .item.planning::before {
   background-image: url(../images/diagram1.svg);
-  background-position: center;
-  background-repeat: no-repeat;
 }
-.advances-list .title.modern::before {
+.advances-list .item.modern::before {
   background-image: url(../images/astronaut1.svg);
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .advances-list .text {
@@ -167,4 +160,30 @@
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+/* Our clients */
+.list-client {
+  display: flex;
+}
+
+.list-client .item + .item {
+  margin-left: 30px;
+}
+
+.list-client .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  cursor: pointer;
+}
+
+.list-client .link:hover {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
