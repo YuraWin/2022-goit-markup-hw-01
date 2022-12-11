@@ -128,22 +128,24 @@
 .team-list {
   display: flex;
 }
-.team-list .item:not(:first-child) {
+.team-list > .item:not(:first-child) {
   margin-left: 30px;
 }
-.team-list .item {
+.team-list > .item {
   width: 270px;
-  height: 368px;
-
+  height: 428px;
+  background-color: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
 .team-list .foto {
-  margin-bottom: 30px;
+  display: block;
 }
-
+.team-list .props {
+  padding: 30px 32px;
+}
 .team-list .title {
   margin-bottom: 10px;
 
@@ -156,10 +158,18 @@
 
 .team-list .vocation {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+/* Team*******************settings social-links */
+.social-links.team .link {
+  fill: #afb1b8;
+}
+.social-links.team .link:hover,
+.social-links.team .link:focus {
+  fill: #fff;
 }
 
 /* Our clients */
@@ -183,7 +193,8 @@
   cursor: pointer;
 }
 
-.list-client .link:hover {
+.list-client .link:hover,
+.list-client .link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
