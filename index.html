@@ -364,7 +364,7 @@
     </footer>
 
     <!-- Модальне вікно -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button data-modal-close class="btn-close">
           <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
@@ -373,8 +373,55 @@
             />
           </svg>
         </button>
+        <!-- Форма відправки даних 
+        
+        -->
+        <form class="js-speaker-form data-form">
+          <b class="title">Залиште свої дані, ми вам передзвонимо</b>
+
+          <label for="name">Ім’я</label>
+          <input type="text" name="name" id="name" />
+
+          <label for="tel">Телефон</label>
+          <input type="tel" name="tel" id="tel" />
+
+          <label for="mail">Пошта</label>
+          <input type="email" name="mail" id="mail" />
+
+          <label for="coment">Коментар</label>
+          <textarea
+            name="coment"
+            id="coment"
+            cols="30"
+            rows="5"
+            placeholder="Введіть текст"
+          ></textarea>
+
+          <input type="checkbox" name="check" id="check" value="agree" />
+          <label for="check"
+            >Погоджуюся з розсилкою та приймаю <a href="/">Умови договору</a>
+          </label>
+
+          <div role="group">
+            <input type="checkbox" name="topic" value="html" id="html" checked />
+            <label for="html">HTML</label>
+
+            <input type="checkbox" name="topic" value="css" id="css" />
+            <label for="css">CSS</label>
+
+            <input type="checkbox" name="topic" value="javascript" id="javascript" />
+            <label for="javascript">JavaScript</label>
+          </div>
+
+          <button type="submit">Відправити</button>
+        </form>
+        <!-- 
+          
+          
+          ****Кінець форми******* -->
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/submit-data.js"></script>
   </body>
 </html>
