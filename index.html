@@ -376,33 +376,41 @@
         <!-- Форма відправки даних 
         
         -->
-        <form class="js-speaker-form data-form">
+        <form class="js-speaker-form data-form" autocomplete="off">
           <b class="title">Залиште свої дані, ми вам передзвонимо</b>
 
-          <label for="name">Ім’я</label>
-          <input type="text" name="name" id="name" />
+          <div class="form-field">
+            <label for="name">Ім’я</label>
+            <input type="text" name="name" id="name" />
+          </div>
 
-          <label for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel" />
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" autofocus />
+          </div>
+          <div class="form-field">
+            <label for="mail">Пошта</label>
+            <input type="email" name="mail" id="mail" autocomplete="on" />
+          </div>
 
-          <label for="mail">Пошта</label>
-          <input type="email" name="mail" id="mail" />
-
-          <label for="coment">Коментар</label>
-          <textarea
-            name="coment"
-            id="coment"
-            cols="30"
-            rows="5"
-            placeholder="Введіть текст"
-          ></textarea>
+          <div class="form-field">
+            <label for="coment">Коментар</label>
+            <textarea
+              name="coment"
+              id="coment"
+              cols="30"
+              rows="5"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
 
           <input type="checkbox" name="check" id="check" value="agree" />
-          <label for="check"
-            >Погоджуюся з розсилкою та приймаю <a href="/">Умови договору</a>
+          <label class="check-label" for="check"
+            >Погоджуюся з розсилкою та приймаю
+            <a class="check-label-link" href="/">Умови договору</a>
           </label>
 
-          <div role="group">
+          <!-- <div role="group">
             <input type="checkbox" name="topic" value="html" id="html" checked />
             <label for="html">HTML</label>
 
@@ -411,7 +419,7 @@
 
             <input type="checkbox" name="topic" value="javascript" id="javascript" />
             <label for="javascript">JavaScript</label>
-          </div>
+          </div> -->
 
           <button type="submit">Відправити</button>
         </form>
