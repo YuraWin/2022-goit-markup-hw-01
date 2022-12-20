@@ -315,19 +315,6 @@
   margin-bottom: 28px;
   /* outline: 1px solid blue; */
 }
-.form-field.textarea {
-  margin-bottom: 20px;
-}
-.form-field > label {
-  position: absolute;
-  left: 0;
-  bottom: 100%;
-
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-}
 
 .form-field > input {
   padding: 10px 42px;
@@ -339,6 +326,8 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field > input:focus {
@@ -347,15 +336,37 @@
 .form-field > input:focus + svg {
   fill: var(--accent-color);
 }
-.form-field svg {
-  fill: black;
-}
+
 .form-field .icon {
   position: absolute;
-  top: 2px;
+  top: 50%;
   left: 12px;
-  transform: translateY(50%);
+  transform: translateY(-50%);
+  fill: black;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.form-field > label {
+  position: absolute;
+  left: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-field > input:focus ~ label,
+.form-field > input:not(:placeholder-shown) ~ label {
+  transform: translate(-42px, -35px);
+}
+
+.form-field.textarea {
+  margin-bottom: 20px;
+}
+
 .form-field > textarea {
   width: 100%;
   resize: none;
@@ -364,15 +375,25 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  cursor: pointer;
 }
 
 .form-field > textarea:focus {
   border-color: var(--accent-color);
 }
+.form-field > textarea:focus + label,
+.form-field > textarea:not(:placeholder-shown) + label {
+  transform: translate(-16px, -37px);
+}
+
 .form-field > textarea::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+}
+.form-field.textarea > label {
+  left: 16px;
+  top: 22px;
 }
 
 .data-form .resolution {
