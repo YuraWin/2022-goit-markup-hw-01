@@ -294,7 +294,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: tomato;
 }
 .data-form .title {
   display: block;
@@ -397,13 +396,7 @@
   top: 22px;
 }
 
-.data-form .resolution {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.resolution .chekbox {
+.resolution-label .checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -416,14 +409,25 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.resolution .check {
-  /* background-color: var(--accent-color); */
-  /* border: 2px solid black;
-  border-radius: 2px; */
-  /* fill: transparent; */
+
+.resolution-label .checkbox:checked + .icon-check {
   fill: var(--accent-color);
 }
+.resolution-label .checkbox:not(:checked) + .icon-check {
+  border: 2px solid black;
+  border-radius: 2px;
+  fill: transparent;
+  --color2: transparent;
+}
+.resolution-label .icon-check {
+  margin-right: 7px;
+}
+
 .data-form .resolution-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;

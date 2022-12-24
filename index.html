@@ -360,11 +360,23 @@
             </li>
           </ul>
         </div>
+        <div class="subscription">
+          <b class="title">Підпишіться на розсилку</b>
+          <form class="subform">
+            <input type="email" placeholder="E-mail" />
+            <button class="btn" type="submit">
+              Підписатися
+              <svg class="icon" width="24" height="24">
+                <use href="./images/symbols.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!-- Модальне вікно -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="btn-close">
           <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
@@ -407,27 +419,14 @@
             <label for="coment">Коментар</label>
           </div>
 
-          <div class="resolution">
-            <label class="resolution-label">
-              <input class="chekbox" type="checkbox" name="check" value="agree" />
-              <svg class="check" width="16" height="15">
-                <use href="./images/symbols.svg#icon-check"></use>
-              </svg>
-              Погоджуюся з розсилкою та приймаю
-              <a class="resolution-label-link" href="/">Умови договору</a>
-            </label>
-          </div>
-          <!-- <div role="group">
-            <input type="checkbox" name="topic" value="html" id="html" checked />
-            <label for="html">HTML</label>
-
-            <input type="checkbox" name="topic" value="css" id="css" />
-            <label for="css">CSS</label>
-
-            <input type="checkbox" name="topic" value="javascript" id="javascript" />
-            <label for="javascript">JavaScript</label>
-          </div> -->
-
+          <label class="resolution-label">
+            <input class="checkbox" type="checkbox" name="check" value="agree" />
+            <svg class="icon-check" width="16" height="15">
+              <use href="./images/symbols.svg#icon-check"></use>
+            </svg>
+            Погоджуюся з розсилкою та приймаю
+            <a class="resolution-label-link" href="/">Умови договору</a>
+          </label>
           <button class="submit" type="submit">Відправити</button>
         </form>
         <!-- 
